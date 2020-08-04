@@ -14,8 +14,8 @@ const bookCardContainer = document.getElementById("bookCardContainer")
 
 
 function checkStorage () {
-    if(!localStorage) {
-        myLibrary = []
+    if(localStorage.length == 0) {
+        localStorage.setItem("myLibrary", JSON.stringify(myLibrary))
     } else {
         myLibrary = JSON.parse(localStorage.getItem("myLibrary"));
         myLibrary.forEach(displayBooksOnPage)
