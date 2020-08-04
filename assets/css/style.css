@@ -1,0 +1,165 @@
+html > * {
+	font-family: 'Libre Baskerville', serif;;
+}
+
+body {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+.mainTitle {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	margin-top: 3%;
+}
+
+.topButtonWrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+}
+
+.addNewBook {
+	background-color: #baecff;
+	padding: 8px;
+	border-radius: 6px;
+	border: 1px solid #a9b9c8;
+	box-shadow: 0px 0px 2px 0px #98d0d2;
+	color: #4a4949;
+}
+
+.addNewBook:hover {
+	background-color: rgba(186,236,255,.7);
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	top: 15%;
+	width: 400px;
+	height: 350px;
+	z-index: 11;
+	margin-top: 25px;
+}
+
+.formWrapper {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: #e8f9ff;
+	border-radius: 10px;
+	justify-content: center;
+	box-shadow: 0px 0px 15px 0px black;
+}
+
+.bookForm {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	height: 75%;
+}
+
+label {
+	margin: 5px;
+}
+
+#x {
+	background-color: transparent;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 14px;
+	border-radius: 15px;
+}
+
+#x:hover {
+	background: #bdbdbd;
+	font-size: 14px;
+}
+
+.bookForm input {
+	width: 75%;
+}
+
+.radioWrapper input{
+    width: auto;
+}
+
+.radioWrapper {
+	margin: 10px;
+}
+
+.bookCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	margin-top: 1%;
+	padding: 30px;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.bookCard {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 10px;
+	padding: 25px;
+	box-sizing: border-box;
+	width: 295px;
+	height: 285px;
+	background: #f0f0f0;
+	border: 1px solid #1c4a59;
+	border-radius: 10px;
+	align-items: center;
+	box-shadow: 2px 2px 11px -6px black;
+}
+
+.cardText {
+	width: 100%;
+}
+
+.readToggle {
+	background: transparent;
+	border-radius: 5px;
+	width: 200px;
+	margin-top: 5px;
+	padding: 7px;
+}
+
+.red {
+	background: #faa;
+}
+
+.green {
+	background: #b6f4b6;
+}
+
+.deleteEntry {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	background: transparent;
+	border-radius: 6px;
+}
+
+p {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
